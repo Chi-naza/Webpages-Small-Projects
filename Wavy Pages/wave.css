@@ -1,3 +1,127 @@
+/* ShapeDivider.App++Haikei.App */
+
 body{
-    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: white;
+    background: #202731;
+    
 }
+
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+
+
+.red{
+    background: red;
+}
+
+
+.blue{
+    background: blue;
+}
+
+
+.pink{
+    background: pink;
+}
+
+
+.grey{
+    background: grey;
+}
+
+.orange{
+    background: rgb(255, 69, 0);
+}
+
+.white{
+    background: white;
+}
+
+
+
+.curve::before{
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    height: 85%;
+    width: 100%;
+    background: #0f0f10;
+    z-index: -1;
+}
+
+
+
+
+/* FOR SVG WAVES */
+
+/* One at the top */
+.wave1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 303px;
+}
+
+.wave1 .shape-fill {
+    fill: #FF4500;
+}
+
+
+
+/* 2nd one */
+
+.wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 172px;
+}
+
+.wave2 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* ************************************ */
+
+.layeredW{
+    aspect-ratio: 400/300;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./mysvg.svg');
+}
+
+
+
+
+

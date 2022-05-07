@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+
+<head> </head>
+
+
+
+<body align="center" bgcolor="kaki">
+
+<script type="text/javascript">
+
+var enigma = {
+Name:"Jaja",
+Tel:"09034653552",
+gender:"kepler",
+odopsy:"Attempt.html"
+
+}
+
+ 
+var beauty = "<form style='margin:10%;'> <lable style='color:blue; font-family:Tahoma; font-size:30px;'> Name </lable> <input style='height:25px; width:300px;' type='text' maxlength='10' value= '"+enigma.Name+"' required /> </br></br> ";
+
+beauty+="<lable style='color:blue; font-family:Tahoma; font-size:30px;'> Phone Number </lable> <input style='height:25px; width:300px;' type='text' value='"+enigma.Tel+"' /> </br> </br>";
+
+beauty+="<lable for='Password' style='color:blue; font-family:Tahoma; font-size:30px;'> Password </lable> <input style='height:25px; width:300px;' type='Password'/> </br></br>";
+
+beauty+="<lable for='Date of Birth' style='color:blue; font-family:Tahoma; font-size:30px;'> Date of Birth </lable> <input style='height:25px; width:300px;'  type='date' /> </br></br>";
+
+beauty+="<a href='"+enigma.odopsy+"' >"
+beauty+="<input type='submit' onclick='clk(event)' value=' Register' style='color:black; font-family:Tahoma; font-size:20px; border:2px solid grey; width:150px; height:50px; background-color:violet; padding:15px; '/>";
+beauty+="</a>";
+
+beauty+="</form>";
+
+document.write(beauty);
+
+   
+  
+  
+  function clk(event){
+  event.preventDefault();
+  location = enigma.odopsy;
+  
+   }
+  
+  
+  
+  
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Page one: Interior Design </title>
+<meta htp-equiv="refresh" content="4"/>
+ 
+<style>
+ *{box-sizing:border-box;}
+ 
+ #ConFlex{
+  //border:2px solid green;
+  width:100%;
+  height:auto;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  //flex-wrap:wrap;
+ }
+ 
+ #Ver1{
+  width:23%;
+  height:auto;
+  background-color:red;
+ }
+ 
+ #Ver2{
+  width:74%;
+  height:auto;
+ }
+ 
+ ul{
+  list-style-type:none;
+  position:relative;
+  width:100%;
+  height:40%;
+ }
+ 
+ li{
+  font-family:fantasy;
+  font-size:20px;
+  position:relative;
+  right:10%;
+  height:8%;
+  width:100%;
+  margin:20px;
+ }
+ 
+ a{
+  text-decoration:none;
+  display:block;
+  color:white;
+  width:100%;
+  height:8%;
+  
+ }
+ 
+ a:hover:not(.active){
+ background-color:antiquewhite;
+ height:100%;
+ width:100%;
+ padding:7px;
+ border:1px groove black;
+ color:grey;
+ }
+ 
+ .active{
+  border:1px groove black;
+  background-color:yellow;
+  height:100%;
+  width:100%;
+  padding:5px;
+  color:#111;
+ }
+ 
+ h2{
+  font-size:40px;
+  color:white;
+  text-shadow:1px 1px 1px green;
+  text-align:center;
+ }
+ 
+ h2 + p{
+ font-size:30px;
+ font-style:italic;
+ font-family:monospace;
+ color:white;
+ text-align:center;
+ }
+ 
+ h1{
+  text-align:left;
+  font-family:Arial Black;
+  font-size:60px;
+ }
+ 
+ h1 + p{
+ text-align:left;
+ font-family:Arial;
+ font-size:50px;
+ color:red;
+ }
+ 
+ #img{
+ width:100%;
+ height:auto;
+ }
+ 
+ img{
+  width:480px;
+  height:350px;
+  position:relative;
+  right:1px;
+  padding:1px;
+  
+  
+ }
+ 
+</style>
+ 
+</head>
+
+<body> 
+
+<section id="ConFlex"> 
+ <div id="Ver1">
+  <h2> <q>Receive the touch of your design</q> </h2>
+  <p>Chinaza</p>
+  
+  <ul>
+   <li> <a href="" class="active">Home</a> </li>
+   <li> <a href="">Your designs</a> </li>
+   <li> <a href="">Our services</a> </li>
+   <li> <a href="">Events and News</a> </li>
+   <li> <a href="">Contact</a> </li>
+   <li> <a href="">About us</a> </li>
+  </ul>
+ </div>
+ 
+ <div id="Ver2">
+  <h1>Interior Design</h1>
+  <p>Showcase</p>
+  
+  <div id="img">
+   <img src="Images/G2.jpg" alt="photo"/>
+   <img src="Images/G10.jpg" alt="photo"/>
+   <img src="Images/G1.jpg" alt="photo"/>
+   <img src="Images/G8.jpg" alt="photo"/>
+   <img src="Images/Sunrise2.jpeg" alt="Sunrise"/>
+   <img src="Images/Sunrise3.jpeg" alt="Sunrise"/>
+  </div>
+ </div>
+ 
+ </section>
+
+</body>
+
+</html>
+
+
+
